@@ -1,5 +1,21 @@
-<?php include 'includes/session.php'; ?>
-<?php
+<html>
+	<?php include 'includes/session.php'; ?>
+<!--  -->
+<head>
+<link href="calendar.css" type="text/css" rel="stylesheet" />
+<meta charset="utf-8">
+<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ably Electrical Works and Impotrer">
+<!-- <meta name="author" content="webThemez.com"> -->
+<title>Ably Electrical Works and Impotrer</title>
+<link rel="shortcut icon" href="front/images/favicon.ico">
+<link href="front/bootstrap/css/bootstrap.css" rel="stylesheet"> 
+<link href="front/fonts/font-awesome/css/font-awesome.css" rel="stylesheet"> 
+<link href="front/css/animations.css" rel="stylesheet"> 
+<!-- <link href="front/css/style.css" rel="stylesheet">  -->
+<link href="front/css/custom.css" rel="stylesheet">
+
+</head><?php
 	$conn = $pdo->open();
 
 	$slug = $_GET['id'];
@@ -19,8 +35,7 @@
 
 
 ?>
-<?php include 'includes/header.php'; ?>
-<body class="hold-transition skin-blue layout-top-nav">
+
 <script>
 (function(d, s, id) {
 	var js, fjs = d.getElementsByTagName(s)[0];
@@ -30,15 +45,31 @@
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 </script>
-<div class="wrapper">
+<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
 
-	<?php include 'includes/navbar.php'; ?>
-	 
-	  <div class="content-wrapper">
-	    <div class="container">
+<?php include 'includes/navbar.php'; ?>
 
-	      <!-- Main content -->
-	      <section class="content">
+
+<section  class="section clearfix no-view secPadding" data-animation-effect="fadeIn">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" >
+                        <div style="
+background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(http://localhost:8090/ablycom/images/banner11.jpg) fixed center center;
+    margin-top: -40vh;
+    height: 80vh;
+    width: 300vh;
+    margin-left: -60vh;
+    background-size: cover;                        ">
+                    <div 
+                   style=" " class="section-title" >
+                    <h1 id="about" style="color: #f4f4f4; margin-top: 0; padding-top: 54vh;"
+                    class="title text-center">Project Detail</h1>
+						 </div> </div>
+                        <div class="space"></div>
+						<br/><br/>
+						
+
 	        <div class="row">
 	        	<div class="col-sm-9">
 	        		<div class="callout" id="callout" style="display:none">
@@ -60,7 +91,7 @@
 		            <br>
 				    <div class="fb-comments" data-href="http://localhost/ablycom/project.php?id=<?php echo $slug; ?>" data-numposts="10" width="100%"></div> 
 	        	</div>
-	        	<div class="col-sm-3">
+	        	<div class="col-sm-2">
 	        		<?php include 'includes/sidebar.php'; ?>
 	        	</div>
 	        </div>
